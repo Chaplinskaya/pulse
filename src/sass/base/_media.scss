@@ -130,16 +130,41 @@
         }
     .catalog__tabs {
         flex-direction: column;
-        margin-top: 40px;
+        margin-top: 20px;
         li {
-            margin: 5px 5px;
+            margin: 2px 2px;
         }
     }
+    .catalog__tab {
+        width: 180px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 40px;
+        }
     .catalog__content {
-        margin-top: 40px;
+        margin-top: 20px;
     }
     .catalog-item {
         width: 300px;
         margin: 0 auto 5px;
+    }
+    .reviews__wrapper {
+        padding: 20px 0;
+    }
+    .reviews__item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .reviews__title {
+        padding-top: 15px;
+        font-size: 16px;
+    }
+    .reviews__text {
+        padding-left: 0;
+        text-align: center;
+    }
+    .reviews__descr {
+        text-align: left;
+        font-size: 14px;
     }
 }
