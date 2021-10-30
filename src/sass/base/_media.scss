@@ -76,6 +76,9 @@
         }
         &__contacts {
             margin-top: 20px;
+            .button {
+                font-size: 11px;
+            }
         }
         &__logo {
             width: 280px;
@@ -113,12 +116,18 @@
         height: 45px;
         font-size: 15px;
     }
-    .advantages__wrapper {
-        flex-direction: column;
-    }
-    .advantages__item {
-        padding-bottom: 30px;
-    }
+    .advantages {
+        padding: 50px 0;
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__item {
+            padding-bottom: 30px;
+        }
+        &__wrapper {
+            margin-top: 40px;
+            }
+        }
     .catalog__tabs {
         flex-direction: column;
         margin-top: 40px;
