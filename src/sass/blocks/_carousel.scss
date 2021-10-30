@@ -20,9 +20,15 @@
     .slick-next {
         right: -66px;
         left: auto;
-    
     }
     .slick-dots{
         display: flex;
+        justify-content: center;
+        button {
+            font-size: 0;
+            border: none;
+            padding: 0 5px;
+        }
     }
+    
 }

@@ -45,6 +45,22 @@
     .button_main {
         width: 250px;
     }
+    .carousel__inner {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .advantages__subtitle {
+        font-size: 15px;
+    }
+    .advantages__descr {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+    .catalog-item {
+        width: 250px;
+    }
 }
 @media (max-width: 575px) {
     .container {
@@ -68,6 +84,9 @@
         &__phone {
             font-size: 14px;
         }
+    }
+    .title, title__left {
+        font-size: 26px;
     }
     .promo {
         min-height: 500px;
@@ -99,5 +118,19 @@
     }
     .advantages__item {
         padding-bottom: 30px;
+    }
+    .catalog__tabs {
+        flex-direction: column;
+        margin-top: 40px;
+        li {
+            margin: 5px 5px;
+        }
+    }
+    .catalog__content {
+        margin-top: 40px;
+    }
+    .catalog-item {
+        width: 300px;
+        margin: 0 auto 5px;
     }
 }
