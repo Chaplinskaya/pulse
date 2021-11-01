@@ -21,7 +21,7 @@
                     </div>
                     <div class="header__contacts">
                         <a href="tel:+09112734455" class="header__phone">+0 (911) 273-44-55</a>
-                        <button class="button">Request a call</button>
+                        <button data-modal="consultation" class="button">Request a call</button>
                     </div>
                 </header>
                 <div class="promo__wrapper">
@@ -43,7 +43,7 @@
                                 all questions
                         </div>
                     </div>
-                    <button class="button button_main">Order a consultation</button>
+                    <button data-modal="consultation" class="button button_main">Order a consultation</button>
                     <div class="promo__link">
                         or
                         <a href="#">Go to catalog</a>
@@ -181,7 +181,7 @@
                         <div class="catalog-item__wrapper">
                             <div class="catalog-item__content catalog-item__content_active">
                                 <img src="img/pulsometr.png" alt="heart rate monitor" class="catalog-item__img">
-                                <div class="catalog-item__subtitle">Polar FT1</div>
+                                <div class="catalog-item__subtitle">Polar FT4</div>
                                 <div class="catalog-item__descr">For the first steps of heart rate training</div>
                                 <a href="#" class="catalog-item__link">More details</a>
                             </div>
@@ -206,7 +206,7 @@
                         <div class="catalog-item__wrapper">
                             <div class="catalog-item__content catalog-item__content_active">
                                 <img src="img/pulsometr.png" alt="heart rate monitor" class="catalog-item__img">
-                                <div class="catalog-item__subtitle">Polar FT1</div>
+                                <div class="catalog-item__subtitle">Suunto M2</div>
                                 <div class="catalog-item__descr">For the first steps of heart rate training</div>
                                 <a href="#" class="catalog-item__link">More details</a>
                             </div>
@@ -398,6 +398,49 @@
                 </div>
             </div>
         </section>
+        <footer class="footer">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.5348634889024!2d30.48532985093755!3d50.43113729653732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cee9933801df%3A0x1e258d7e4158974e!2z0YPQuy4g0JrRg9C00YDRj9GI0L7QstCwLCAxNtCQLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1635665154223!5m2!1sru!2sua" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="footer__info">
+                <address class="footer__addr">Kiyv, Kudrashova, 16A</address>
+                <a href="tel:+09112734455" class="footer__phone">+0 (911) 273-44-55</a>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-item"><img src="icons/facebook.svg" alt="facebook"></a>
+                    <a href="#" class="footer__social-item"><img src="icons/instagram.svg" alt="instagram"></a>
+                    <a href="#" class="footer__social-item"><img src="icons/instagram.svg" alt="pinterest"></a>
+                </div>
+            </div>
+        </footer>
+        <div class="overlay">
+            <div class="modal" id="consultation">
+                <div class="modal__close">&times;</div>
+                <div class="modal__subtitle">Just fill out the application form</div>
+                <div class="modal__descr">and we will call you back within 10 minutes</div>
+                <form class="feed-form feed-form_mt25" action="#">
+                    <input name="name" required placeholder="Your name" type="text">
+                    <input rname="phone" equired placeholder="Your phone" type="number">
+                    <input name="email" required placeholder="Your email" type="email">
+                    <!--<input type="submit" value="Order a consultation">-->
+                    <button class="button button_submit">Order a consultation</button>
+                </form>
+            </div>
+            <div class="modal" id="order">
+                <div class="modal__close">&times;</div>
+                <div class="modal__subtitle">Your order</div>
+                <div class="modal__descr">Heart rate monitor Polar FT1</div>
+                <form class="feed-form feed-form_mt25" action="#">
+                    <input name="name" required placeholder="Your name" type="text">
+                    <input rname="phone" equired placeholder="Your phone" type="number">
+                    <input name="email" required placeholder="Your email" type="email">
+                    <!--<input type="submit" value="Order a consultation">-->
+                    <button class="button button_submit">Buy</button>
+                </form>
+            </div>
+            <div class="modal modal_mini" id="thanks">
+                <div class="modal__close">&times;</div>
+                <div class="modal__subtitle">Thank you for your application!</div>
+                <div class="modal__descr">Our manager will contact you soon!</div>
+            </div>
+        </div>
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="js/slick.min.js"></script>
