@@ -47,4 +47,38 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn('slow');
         });
     });
+    
+    function valideForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "We need your email address to contact you",
+                    minlength: jQuery.validator.format("At least {0} characters required!")
+                  },
+    
+                phone: {
+                    required: "Please specify your phone"
+                },
+                email: {
+                  required: "We need your email address to contact you",
+                  email: "Your email address must be in the format of name@domain.com"
+                }
+              }
+        });
+    };
+
+    valideForms('#consultation-form');
+    valideForms('#consultation form');
+    valideForms('#order form');
   });

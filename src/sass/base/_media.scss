@@ -167,4 +167,35 @@
         text-align: left;
         font-size: 14px;
     }
+    .footer__info {
+        max-width: 300px;
+        padding: 30px 10px;
+        height: auto;
+    }
+    .footer__addr {
+        font-size: 16px;
+    }
+    .footer__phone {
+        font-size: 18px;
+    }
+    .footer__social-item {
+        width: 40px;
+        height: 40px;
+    }
+    .modal {
+        width: 300px;
+        padding: 20px;
+        label.error {
+            font-size: 14px;
+        }
+        .button_submit {
+            height: 50px;
+        }
+    }
+    .modal__close {
+        right: 0;
+    }
+    .feed-form {
+        width: 100%;
+    }
 }
