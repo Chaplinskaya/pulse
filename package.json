@@ -15,7 +15,9 @@
     "url": "https://github.com/Chaplinskaya/pulse/issues"
   },
   "homepage": "https://github.com/Chaplinskaya/pulse#readme",
-  "dependencies": {},
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  },
   "devDependencies": {
     "browser-sync": "^2.27.5",
     "gulp": "^4.0.2",

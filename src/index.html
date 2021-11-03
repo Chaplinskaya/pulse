@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
     <body>
-        <div class="promo">
+        <section id="up" class="promo">
             <div class="container">
                 <header class="header">
                     <a href="#" class="header__logo">
@@ -50,7 +51,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <section class="advantages">
             <div class="container">
                 <h2 class="title">Our advantages</h2>
@@ -67,7 +68,7 @@
                         </div>
                     </div>
                     <div class="advantages__item">
-                        <img src="icons/cup.png" alt="cup" class="advantages__icon">
+                        <img src="icons/heart.png" alt="cup" class="advantages__icon advantages__icon_animated">
                         <div class="advantages__subtitle">
                             We care about health
                         </div>
@@ -78,7 +79,7 @@
                         </div>
                     </div>
                     <div class="advantages__item">
-                        <img src="icons/cup.png" alt="cup" class="advantages__icon">
+                        <img src="icons/shoe.png" alt="cup" class="advantages__icon">
                         <div class="advantages__subtitle">
                             Learn to run
                         </div>
@@ -363,7 +364,7 @@
             <div class="container">
                 <h2 class="title">Customer reviews</h1>
                 <div class="reviews__wrapper">
-                    <div class="reviews__item">
+                    <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="1s">
                         <img src="img/photo3.png" alt="">
                         <div class="reviews__text">
                             <div class="reviews__title">Irina Ivanchenko</div>
@@ -373,7 +374,7 @@
                                 After a while, I decided to update the gadget and turned to the same place. Thanks!</div>
                         </div>
                     </div>
-                    <div class="reviews__item">
+                    <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="1s">
                         <img src="img/photo2.png" alt="">
                         <div class="reviews__text">
                             <div class="reviews__title">Ivan Semochkin</div>
@@ -385,7 +386,7 @@
                                 With them I prepared for my first half marathon. Thanks!</div>
                         </div>
                     </div>
-                    <div class="reviews__item">
+                    <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="1s">
                         <img src="img/photo1.png" alt="">
                         <div class="reviews__text">
                             <div class="reviews__title">Julia Dashkina</div>
@@ -441,11 +442,16 @@
                 <div class="modal__descr">Our manager will contact you soon!</div>
             </div>
         </div>
+        <a href="#up" class="pageup">
+            <img src="icons/up.svg" alt="up">
+        </a>
+        
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/jquery.validate.min.js"></script>
         <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/wow.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
